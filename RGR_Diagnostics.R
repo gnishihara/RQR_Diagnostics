@@ -85,12 +85,9 @@ gg_resfitted = function(fitted.model) {
     labs(x="Fitted Values", y = ylabel) +
     ggtitle("Residuals vs. Fitted Values")
 }
-```
 
 ## 診断図関数：スケール・ロケーションプロット
 
-\tiny
-```{r}
 # スケール・ロケーションプロット
 gg_scalelocation = function(fitted.model) {
   data = fortify(fitted.model) %>% as_tibble()
